@@ -22,14 +22,14 @@ body
         }
         .bar
         {
-            margin: 5em 0;
+            margin: 2em 0;
             border : 3px solid black;
             padding: 15px;
             border-radius: 15px;
-
+            transition: 1.2s;
             &:hover
             {
-                transition: 1.2s;
+                
                 box-shadow: 10px 10px 10px 0 black;
             }
 

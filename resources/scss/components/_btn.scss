@@ -6,10 +6,10 @@
     border: none;
     color: antiquewhite;
     box-shadow : 4px 4px 4px 0 black;
-
+    transition: 1.2s;
     &:hover
     {
-        transition: 1.2s;
+        
         box-shadow: 10px 10px 10px 0 black;
     }
 }
