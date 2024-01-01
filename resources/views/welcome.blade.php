@@ -7,8 +7,7 @@
         <meta name="keywords" content="bar, list, alcool, biere">  <!--mot cléf pour le moteur de recherche: keyword1, keyword2, ...-->
         <meta name="author" content="Desmet Tim">   <!--auteur de la page: auteur1, auteur2, ...-->
         <meta name="viewport" content="width=device-width, initial-scale=1">  <!--pour garder les proportions sur différent affichage-->
-        <!-- <link rel="stylesheet" href="style.css">   lien vers la feuille de style CSS -->
-        <!-- <script defer src="script.js"></script> lien vers la page codé en javascript -->
+        @vite(["resources/css/app.css", "resources/scss/app.scss", "resources/js/app.js",])
     </head>
     <body>
         <header>

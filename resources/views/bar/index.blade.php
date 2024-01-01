@@ -10,15 +10,18 @@
             <p>{{ $bar->ville }}</p>
             <p>{{ $bar->description }}</p>
             <p>{{ $bar->note }}</p>
+            <div class="link">
+                <a href="{{ route('bar.show', $bar->id) }}">Voir</a>
+                <a href="{{ route('bar.edit', $bar->id) }}">Modifier</a>
 
-            <a href="{{ route('bar.show', $bar->id) }}">Voir</a>
-            <a href="{{ route('bar.edit', $bar->id) }}">Modifier</a>
-
-            <form action="{{ route('bar.destroy', $bar->id) }}" method="post">
-                @csrf
-                @method('delete')
-                <input type="submit" value="Supprimer">
-            </form>
+                <form action="{{ route('bar.destroy', $bar->id) }}" method="post">
+                    @csrf
+                    @method('delete')
+                    <input type="submit" value="Supprimer">
+                </form>
+            </div>
+            
+            
         </article>
         @endforeach
 @endsection
