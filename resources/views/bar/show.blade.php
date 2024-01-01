@@ -10,13 +10,16 @@
         <p>{{ $bar->description }}</p>
         <p>{{ $bar->note }}</p>
         
-        <a href="{{ route('bar.edit', $bar->id) }}">Modifier</a>
+        <div class="link">
+            <button class="btn" onclick="location.href='{{ route('bar.edit', $bar->id) }}'">Modifier</button>
 
-        <form action="{{ route('bar.destroy', $bar->id) }}" method="post">
-            @csrf
-            @method('delete')
-            <input type="submit" value="Supprimer">
-        </form>
+            <form action="{{ route('bar.destroy', $bar->id) }}" method="post">
+                @csrf
+                @method('delete')
+                <input class="btn" type="submit" value="Supprimer">
+            </form>
+        </div>
+        
     </article>
 
 @endsection

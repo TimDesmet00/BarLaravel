@@ -1,17 +1,16 @@
 @import './components/_btn.scss';
+@import './components/_nav.scss';
+@import './components/_footer.scss';
 
 body
 {
     background-color: bisque;
     font-size: 25px;
-    nav
-    {
-        display: flex;
-        justify-content: space-evenly;
-    }
+
     header
     {
         text-align: center;
+        
     }
 
     main
@@ -29,11 +28,5 @@ body
         }
     }
 
-    footer
-    {
-        text-align: center;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 2em 0;
-    }
+    
 }
