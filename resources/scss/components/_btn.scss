@@ -2,6 +2,14 @@
     width: 150px;
     height: 40px;
     background-color: darkred;
-    border-radius: 2px;
+    border-radius: 10px;
+    border: none;
     color: antiquewhite;
+    box-shadow : 4px 4px 4px 0 black;
+
+    &:hover
+    {
+        transition: 1.2s;
+        box-shadow: 10px 10px 10px 0 black;
+    }
 }

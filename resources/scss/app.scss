@@ -16,12 +16,25 @@ body
     main
     {
         margin: 0 10%;
-        h2{
+        h2
+        {
             text-align: center;
         }
-        .bar{
+        .bar
+        {
             margin: 5em 0;
-            .link{
+            border : 3px solid black;
+            padding: 15px;
+            border-radius: 15px;
+
+            &:hover
+            {
+                transition: 1.2s;
+                box-shadow: 10px 10px 10px 0 black;
+            }
+
+            .link
+            {
                 display: flex;
                 justify-content: space-evenly;
             }
